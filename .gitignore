@@ -1,0 +1,64 @@
+# ===================== 核心忽略（必选） =====================
+# 忽略 node_modules 文件夹（依赖包，无需提交）
+node_modules/
+
+# 忽略打包/构建产物（前端编译后的文件）
+dist/
+build/
+out/
+coverage/
+lib/
+es/
+assets/
+
+# ===================== 环境/配置文件 =====================
+# 环境变量文件（包含密钥、端口等敏感信息）
+.env
+.env.*
+!.env.example # 保留示例环境文件（可选）
+
+# 配置文件（本地自定义配置，无需同步）
+*.local.js
+*.config.local.js
+
+# ===================== 日志/缓存文件 =====================
+# 日志文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 缓存文件
+.DS_Store # Mac 系统缓存
+Thumbs.db # Windows 系统缓存
+*.swp # Vim 缓存
+*.swo # Vim 缓存
+.idea/ # WebStorm/IDEA 编辑器配置
+.vscode/ # VS Code 本地配置（可选忽略，如需保留工作区配置可删除此行）
+.history/ # VS Code 历史记录插件缓存
+
+# ===================== 包管理/锁文件（可选忽略） =====================
+# 如需统一包版本，可保留 lock 文件（删除下面两行）；如需灵活版本，可忽略
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ===================== 其他通用忽略 =====================
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+
+# 压缩包
+*.zip
+*.rar
+*.7z
+
+# 编辑器备份文件
+*.bak
+*.~*
+
+# Git 本身的忽略（避免递归）
+.gitignore.local # 本地个性化忽略（不提交到仓库）
